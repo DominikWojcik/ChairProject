@@ -23,11 +23,8 @@ var arrowRight = document.querySelector('.slider__nav--next');
 
 function slide() {
     for(var i=0; i<sliderry.length; i++){
-        if (sliderry[i].classList.contains('slider__el-active')){
-            sliderry[i].classList.remove('slider__el-active');
-        }else {
-            sliderry[i].classList.add('slider__el-active');
-        }
+
+        sliderry[i].classList.toggle('slider__el-active');
 
     }
 }
