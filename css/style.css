@@ -220,6 +220,25 @@ a {
   left:auto;
   right: 40px;/*bedize dziedziczony dla prawwej strzałki trzeba zresetować za pomoca auto*/
 }
+/*opcje dla slider*/
+.slider-slides-cnt {
+  position: relative;
+}
+
+.slider__el{
+  position: absolute;
+  left: 10%;
+  top: 45vh;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.slider__el-active {
+  z-index: 1;
+  opacity: 1;
+}
+
+/*koniec slider*/
 
 .spacing-y{
   padding: 40px 0;
