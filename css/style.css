@@ -449,7 +449,7 @@ a {
   position: absolute;
   font-size: 1.8rem;
   font-weight: normal;
-  left: calc(50% - 2 * 30px);
+  left: calc(50% - 2 * 35px);
   top: calc(100% - 70px);
 
 }
