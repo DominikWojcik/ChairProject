@@ -68,14 +68,16 @@ a {
   font-weight: bold;
 }
 
-
+.onWord:hover {
+  color: red;
+}
 .main-header {
   background: black;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: bold;
-}
+  }
 
 
 .main-header a {
@@ -94,6 +96,7 @@ a {
   position: relative; /* bo podmenu jest domyślnie absolute*/
   margin: 0 10px;
   padding: 16px 0;
+  z-index: 2;
 }
 
 .nav-list li::before{
@@ -108,6 +111,7 @@ a {
 .nav-list li:hover .nav-list__sub {
   visibility: visible;
   opacity: 1;
+  z-index: 2;
 
 }
 /*żeby się nie chował to trzeba zlobić before do nav-list li niewidoczny ale wydłużony w dół zeby był częscią listy wtedy się nie schowa*/
@@ -122,7 +126,7 @@ a {
   transition: all .7s;
   visibility: hidden;
   opacity: 0;
-
+  z-index: 2;
 }
 
 /* trójkąt ma szer i wys 0*/
@@ -136,10 +140,12 @@ a {
   left: 50%;
   top: -20px;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .nav-list__sub li {
   padding: 6px 0;
+  z-index: 2;
 }
 
 
@@ -719,4 +725,71 @@ a {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/*RWD*/
+ @media (max-width: 768px) {
+  .slider .container--flex, .main-header .container--flex  {
+    flex-flow: column;
+  }
+   .slider .container--flex{
+     height: 60vh;
+   }
+   .slider__el{
+     top: 10vh;
+   }
+   .slider__el img{
+     height: 200px;
+   }
+   .slider__col--small {
+     width: 80vw;
+   }
+   .offers .container--flex, .price_boxcontainer {
+     flex-flow: column;
+     align-items: center;
+   }
+   .offers__col{
+     width: 80vw;
+   }
+   .price .price__box{
+     width: 65vw;
+   }
+   .price__box--button .button{
+
+     font-size: 2rem;
+     top: calc(100% - 70px);
+   }
+   .price .title-decor {
+     margin-left: 15px;
+   }
+   .footer .box__container {
+     flex-flow: column;
+   }
+   .footer .form {
+     width: 90vw;
+     margin: 0 auto;
+   }
+   .footer .colRight{
+     width: 80%;
+   }
+   .footer .title-decor {
+     margin-left: 15px;
+   }
+   .footer .footer--end {
+    flex-flow: column;
+    margin: 10px;
+
+   }
+   .footer p {
+     width: 90%;
+   }
+   .footer p:last-child {
+     width: 90%;
+   }
+   .footer--end .imgholder {
+     width: 90%;
+     display: inline;
+     position: relative;
+
+   }
 }
