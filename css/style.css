@@ -447,10 +447,10 @@ a {
 .price__box--button .button{
 
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: normal;
   left: calc(50% - 2 * 30px);
-  top: calc(100% - 60px);
+  top: calc(100% - 70px);
 
 }
 
