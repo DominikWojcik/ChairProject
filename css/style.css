@@ -71,6 +71,29 @@ a {
 .onWord:hover {
   color: red;
 }
+
+.onWord {
+  -webkit-animation: random 4s infinite;
+  animation: random 4s infinite;
+}
+
+@keyframes random {
+  15% {
+    color: red;
+  }
+  30% {
+    color: gold;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: blue;
+  }
+  75% {
+    color: whitesmoke;
+  }
+}
 .main-header {
   background: black;
   color: #fff;
@@ -726,6 +749,7 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 
 /*RWD*/
  @media (max-width: 768px) {
