@@ -32,3 +32,14 @@ function slide() {
 arrowLeft.addEventListener('click',slide )
 arrowRight.addEventListener('click',slide )
 
+//button
+
+var buttons = document.getElementsByClassName('button');
+
+for(let i=0; i<buttons.length; i++){
+    buttons[i].addEventListener("click", function(e){
+        e.preventDefault()
+    })
+}
+
+
