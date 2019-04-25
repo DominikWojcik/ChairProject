@@ -752,7 +752,7 @@ a {
 
 
 /*RWD*/
- @media (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
   .slider .container--flex, .main-header .container--flex  {
     flex-flow: column;
   }
